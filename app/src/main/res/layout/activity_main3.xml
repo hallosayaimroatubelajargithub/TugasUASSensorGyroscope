@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+    android:background="#EAEAEA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/gyroscopePageId"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/second"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="253dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity=""
+                    android:text="Gyro atau Gyroscope merupakan sensor atau alat sebagai fitur smartphone yang berguna menjaga arah agar sesuai maupun memberikan stabilitas dalam stabilizer, navigasi, dan lainnya. Sehingga hadirnya fitur ini memungkinkan pengguna merasakan perubahan arah maupun akselerasi sudut rotasi"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPrev"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:background="@drawable/custom"
+        android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+        android:onClick="buttonPrev"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/custom"
+        android:drawableRight="@drawable/ic_baseline_dashboard_24"
+        android:onClick="buttonNext"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/buttoncenter"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/custom"
+        android:drawableRight="@drawable/ic_baseline_notifications_24"
+        android:onClick="buttonCenter"
+        tools:ignore="OnClick,SpeakableTextPresentCheck" />
+
+</RelativeLayout>
